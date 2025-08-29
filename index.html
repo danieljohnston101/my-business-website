@@ -101,6 +101,28 @@
     <div class="cta">
       Call now for a free measure and quote!
     </div>
+<div class="testimonial-rotator">
+  <p id="testimonial-text">
+    “What a transformation! I can now use my garage as a comfortable play area for the children”
+    <br><strong>– Tracy</strong>
+  </p>
+</div>
+
+<script>
+  const testimonials = [
+    '“What a transformation! I can now use my garage as a comfortable play area for the children”<br><strong>– Tracy</strong>',
+    '“When hosting parties, my garage now becomes the perfect location, and no worries about stains on the carpet”<br><strong>– Perry</strong>',
+    '“It’s been 13 years and it still holds up after parking vehicles on it daily”<br><strong>– Sam</strong>',
+    '“My garage can now be used as a spare bedroom when required and then easily return to its original purpose as a garage”<br><strong>– Ben</strong>'
+  ];
+
+  let index = 0;
+  setInterval(() => {
+    index = (index + 1) % testimonials.length;
+    document.getElementById('testimonial-text').innerHTML = testimonials[index];
+  }, 5000);
+</script>
+
 
     <div class="contact">
       <p><strong>Daniel Johnston</strong></p>
